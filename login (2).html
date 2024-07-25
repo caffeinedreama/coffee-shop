@@ -1,0 +1,123 @@
+<html>
+<head>
+<title> Login Form </title>
+</head>
+<center><body>
+  <header>
+        <nav>
+            <a href="home.html">home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+            <a href="feedback.html">feedback</a>
+            <a href="login.html">Login</a>
+        </nav>
+
+    </header>
+<div class="container">
+<div class="main"><br><br>
+<img src="">
+<h2>Login To account</h2>
+<form id="form_id" method="post" name="myform">
+<label>UserName:</label>
+<input type="text" name="username" id="username"/><br><br>
+<label>Password:</label>
+<input type="password" name="password" id="password"/><br><br>
+<button value="login"  id="submit" onclick="validate()"> login </button>
+</form>
+</div>
+</div>
+</body>
+</center>
+</html>
+<script>
+var attempt = 3; // Variable to count number of attempts.
+// Below function Executes on click of login button.
+function validate(){
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+if ( username == "admin" && password == "test"){
+alert ("Login successfully");
+window.location = "crud.html"; // Redirecting to other page.
+return false;
+}
+else if ( username == "admin2" && password == "test2"){
+alert ("Login successfully");
+window.location = "https://google.com"; // Redirecting to other page.
+return false;
+}
+else{
+attempt --;// Decrementing by one.
+alert("You have left "+attempt+" attempt;");
+// Disabling fields after 3 attempts.
+if( attempt == 0){
+document.getElementById("username").disabled = true;
+document.getElementById("password").disabled = true;
+document.getElementById("submit").disabled = true;
+return false;
+}
+}
+}
+</script>
+
+<style>
+  body{
+    background-image:url("—Pngtree—coffee shop poster background material_1060324.jpg");
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat : no repeat;
+    background-attachment:fixed;
+    margin: 0;
+    padding: 0;
+    dispaly: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header{
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Caveat', cursive;        
+  
+}
+.container{
+  width: 400px;
+  height: 300px;
+  background: burlywood;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+  label{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+  }
+  
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+  background-color: white;
+  color: darkviolet;
+  font-size: 16px;
+  font-weight: 1000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+  input{
+    padding: 15px;
+  border: none;
+  border-radius: 3px;
+  background-color: white;
+  color: darkviolet;
+  font-size: 16px;
+  font-weight: 1000;
+  transition: background-color 0.3s ease;
+}
+    
+    
+  }
+  </style>

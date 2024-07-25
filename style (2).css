@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  color: black;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+header{
+  background-color: wheat;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+}
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  color: firebrick;
+  text-align: left;
+}
+
+nav {
+  text-align: right;
+}
+
+nav a {
+  color:#333;
+  text-decoration: none;
+  padding: 0 15px;
+  font-size: 1.2em;
+
+}
+
+/* Section Styles */
+.section {
+  padding: 50px 0;
+  text-align: center;
+  background-color: wheat;
+}
+
+.section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color:black;
+}
+
+.menu-item {
+  background-color: brown;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.menu-item h3 {
+  margin-top: 0;
+  color: black;
+}
+.feedback{
+  background-color:brown;
+  border-radius: 10px;
+  box-shadow:0 2px 4px rgba(0,0,0,0.1);
+  padding:20px:
+  margin-bottom:10px;
+  }
+  
+/* Footer Styles */
+footer {
+  background-color: brick;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 0;
+  font-family: Arial,Hevelticafont-,sans-serif;
+  font-size: 0.8em;
+  color: black;
+}

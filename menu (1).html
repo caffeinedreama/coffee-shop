@@ -1,0 +1,329 @@
+
+<html>
+    <body>
+      <header>
+        <nav>
+            <a href="home.html">home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+            <a href="feedback.html">feedback</a>
+            <a href="login.html">Login</a>
+        </nav>
+
+    </header>
+        <div class="menu-card-container">
+        <h1><b> MENU ITEM</b> <br> <small><i>~ always fresh..always hot ~</i></small></h1>
+        <img src="https://cdn.pixabay.com/photo/2015/10/23/15/51/coffee-1003185__480.jpg">
+        <h2><i><b>COFFEE</b></i></h2>
+        <ul style="list-style-type:disc;">
+            <li>Coffee -------------- $25</li>
+            <li>Espresso ----------------- $100</li>
+            <li>Americano -------------- $150</li>
+            <li>Cappuccino ------------- $170</li>
+            <li>Mocha ------------------- $200</li>
+            <li>Cafe Latte --------------- $250</li>
+            <li>Caramel Macchiato ---- $170</li>
+            <li>Piccolo ------------------ $120</li>
+        </ul>
+        <h2><i><b>OTHERS</b></i></h2>
+        <ul style="list-style-type:disc;">
+            <li>Black tea --------------- $40</li>
+            <li>Lemon tea ------------- $30</li>
+            <li>Strawberry tea -------- $50</li>
+            <li>Lychee tea ------------- $60</li>
+            <li>Mineral water --------- $20</li>
+        </ul>
+            <h2><i><b>PASTRIES</b></i></h2>
+            <ul style="list-style-type:disc;">
+                <li>Puff --------------- $20 </li>
+                <li>Donut -------------$30</li>
+                <li>Shortcrust -------------$45</li>
+                <li>Flio----------------$50</li>
+                <li>Flakey------------- $60</li>
+            </ul>
+        <hr><br>
+        <img src="https://cdn.pixabay.com/photo/2015/10/23/15/51/coffee-1003185__480.jpg" width="100px" height="100px">
+        <a href="https://www.healthline.com/nutrition/top-evidence-based-health-benefits-of-coffee">Visit Our Website</a>
+        <h3><b>Thank you for your visit <br><small>We always ready to serve you !</small></b></h3>
+             <section>
+   <h1 class="title">FAQ ACCORDION</h1>
+
+   <div class="faq">
+    <div class="question">
+     <h3>1. What is the best coffee?</h3>
+     <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="answer">
+     <p> The one you like!
+      
+     </p>
+    </div>
+   </div>
+   <div class="faq">
+    <div class="question">
+     <h3>2. Is coffee a bean?</h3>
+     <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="answer">
+     <p>
+      It is the seed inside the cherry of the coffee plant.When the ripe cherry is picked, it is dried through various processes to remove the seed,which is then roasted and ground to prepare your favourite beverage.
+     </p>
+    </div>
+   </div>
+   <div class="faq">
+    <div class="question">
+     <h3>3. Where are you located? ?</h3>
+     <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="answer">
+     <p>
+      We are located in the heart of the city, wherer you can find us.
+       13th cross anna nagar chennai
+     </p>
+    </div>
+   </div>
+   <div class="faq">
+    <div class="question">
+     <h3>4. what is the temperature to brew coffee ?</h3>
+     <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="answer">
+     <p>
+       The optimal temperature for brewing coffee is between 95-98C.Colder water doesn't extract caffeine/essential oils from the bean,and above such temperatures the acidity increases wildy.
+     </p>
+    </div>
+   </div>
+   <div class="faq">
+    <div class="question">
+     <h3>5. what are the opening hours ?</h3>
+     <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="answer">
+     <p>
+      Our shop has been available every day from 9am to 9pm.Expect monday shop closure.
+     </p>
+    </div>
+   </div>
+  </section>
+        </div>
+    </body>
+</html>
+<script>
+    const faqs = document.querySelectorAll('.faq');
+
+faqs.forEach((faq) => {
+	faq.addEventListener('click', () => {
+		faq.classList.toggle("active");
+	});
+})
+</script>
+<style>
+ body{
+      background: wheat;
+     font-family: 'Caveat', cursive;
+     
+  }   
+   header{
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Caveat', cursive;        
+  
+}
+  .menu-card-container{
+      margin: 20px 15%;
+      width:60%;
+      background:brown;
+      padding:5%;
+      border-radius: 40px;
+  }
+
+
+  h1{
+      background-image: linear-gradient(to right, #ee00ff 0%, #fbff00 100%);
+      color: transparent;
+      -webkit-background-clip: text;
+      text-align: center;
+      font-size:60px;
+  }
+  img{
+      width:100px;
+      height:100px;
+      border-radius:50%;
+  }
+  h2{
+      background: black;
+      color: transparent;
+      -webkit-background-clip: text;
+      text-align:center;
+      font-size:30px;
+      font-family:'Times New Roman', Times, serif;
+  }
+  ul{
+      font-size: 20px;
+      color:#8f94fb
+  }
+  a:link{
+      color:black;
+      font-size:20px;
+      text-decoration: none;
+  }
+  a:hover{
+      color:black;
+  }
+  a:active{
+      color:black;
+  }
+  h3{
+      font-size:30px; 
+      text-align:center;
+      color:black;
+      font-family: 'Caveat', cursive;
+  }
+  .credit a {
+      text-decoration: none;
+      color: black;
+      font-weight: 800;
+    }
+
+    .credit {
+        color: black;
+      text-align: center;
+      margin-top: 10px;
+      font-family: Verdana,Geneva,Tahoma,sans-serif;
+    }
+
+    @media only screen and (max-width: 860px) {
+      h1
+        {
+           font-size: 38px;
+       }
+       .menu-card-container{
+          margin: 20px 5%;
+          width:80%;
+       }
+     }
+     @media only screen and (max-width: 600px) {
+      h1
+        {
+           font-size: 28px;
+       }
+       .menu-card-container{
+          margin: 20px 1%;
+          width:88%;
+       }
+       ul{
+          font-size: 20px;
+          color:black;
+      }
+      h2{
+          font-size:18px ;
+      }
+      h3{
+          font-size: 18px;
+     }}
+    *{
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Times New Roman", Times, serif;
+    background: url("https://cdn.searchenginejournal.com/wp-content/uploads/2018/09/25-of-the-Best-Examples-of-Effective-FAQ-Pages-1520x800.png");
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  section {
+    width: 80%;
+    margin: 0 -100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 40px;
+    margin: 40px 0;
+    color: rgb(255, 103, 235);
+  }
+  
+  .faq {
+    max-width: 700px;
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid greenyellow;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  
+  .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h3 {
+    font-size: 25px;
+    color: rgb(255, 191, 191);
+  }
+  
+  .answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+    color: rgb(191, 253, 233);
+  }
+  
+  .answer p {
+    padding-top: 20px;
+    line-height: 1.6;
+    font-size: 20px;
+  }
+  
+  .faq.active .answer {
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+  }
+  
+  .faq.active i {
+    transform: rotate(180deg);
+  }
+  
+  i {
+    transition: transform 0.5s ease-in;
+    color: yellow;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    section {
+      margin: 0 auto;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    section {
+      margin: 0 auto;
+    }
+  }
+
+
+
+</style>
+
+  
