@@ -70,10 +70,10 @@ nav a {
   padding:20px:
   margin-bottom:10px;
   }
-textarea {
+input {
   border: none;
   resize: none;
-  width: 100%;
+  width: 25%;
   padding: 0.2rem;
   color: inherit;
   font-family: inherit;
@@ -82,10 +82,10 @@ textarea {
   box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.3), inset -2px -2px 8px rgba(255, 255, 255, 0.8);
   background-color: rgba(255, 255, 255, 0.3);
 }
-textarea::placeholder {
+input::placeholder {
   color: black;
 }
-textarea:focus {
+input:focus {
   outline-color: #ffcc33;
 }
   
